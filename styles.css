@@ -2,57 +2,90 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-header {
-    text-align: center;
+.container {
+    display: flex;
+}
+
+.sidebar {
     background-color: #1e90ff;
     color: white;
     padding: 20px;
+    width: 25%;
+    text-align: center;
 }
 
-h1 {
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 1.8em;
     margin-bottom: 10px;
-    font-size: 2em;
 }
 
-p, ul {
-    margin: 0 20px;
+.sidebar p {
+    margin: 10px 0;
 }
 
-section {
-    background-color: white;
-    margin: 20px;
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    width: 75%;
     padding: 20px;
-    border-radius: 5px;
-}
-
-ul {
-    list-style-type: none;
 }
 
 h2 {
     border-bottom: 2px solid #1e90ff;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-a {
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project {
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
     color: #1e90ff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+.project a:hover {
     text-decoration: underline;
-}
-
-header a {
-    color: white;
-    text-decoration: underline;
-}
-
-header p {
-    margin: 5px 0;
 }
