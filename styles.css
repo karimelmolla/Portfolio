@@ -15,7 +15,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change to row to place sections side by side */
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
@@ -27,12 +27,12 @@ body {
 .profile-section {
     background-color: #e0e7ff;
     padding: 20px;
-    text-align: center;
-    flex: 1;
+    text-align: left; /* Align text to the left */
+    width: 300px; /* Fixed width for the profile section */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    justify-content: flex-start; /* Align content at the top */
 }
 
 .profile-pic {
@@ -41,11 +41,12 @@ body {
     border-radius: 50%;
     border: 3px solid #fff;
     object-fit: cover;
+    margin-bottom: 15px; /* Add margin to separate elements */
 }
 
 h1 {
     font-size: 2rem;
-    margin: 20px 0 10px;
+    margin: 10px 0;
     color: #004aad;
 }
 
@@ -60,7 +61,7 @@ p {
 }
 
 .profile-link {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #004aad;
     color: #fff;
@@ -75,6 +76,7 @@ p {
 
 .main-content {
     padding: 20px 40px;
+    flex: 1; /* Allow the main content to take up the rest of the space */
 }
 
 .section {
