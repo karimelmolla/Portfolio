@@ -1,91 +1,85 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f9;
 }
 
 .container {
     display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 .sidebar {
-    background-color: #1e90ff;
+    background-color: #007bff;
     color: white;
     padding: 20px;
-    width: 25%;
+    width: 300px;
     text-align: center;
 }
 
 .profile-pic {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .sidebar h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .sidebar p {
+    font-size: 14px;
     margin: 10px 0;
 }
 
-a {
-    color: white;
-    text-decoration: underline;
-}
-
 main {
-    width: 75%;
+    flex: 1;
+    background-color: white;
     padding: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #1e90ff;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.project {
-    background-color: white;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 .project img {
-    width: 150px;
+    width: 100%;
     height: auto;
-    margin-right: 20px;
-}
-
-.project h3 {
-    font-size: 1.2em;
     margin-bottom: 10px;
-}
-
-.project p {
-    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .project a {
-    color: #1e90ff;
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
 }
 
-.project a:hover {
-    text-decoration: underline;
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
 }
