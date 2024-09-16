@@ -1,3 +1,4 @@
+/* Reset default styling */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,14 @@ body {
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
+    padding: 20px;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,12 +74,6 @@ p {
 }
 
 .main-content {
-    flex: 2;
-    padding: 20px 40px;
-}
-
-.Education-content{
-    flex: 2;
     padding: 20px 40px;
 }
 
@@ -88,6 +85,8 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #333;
+    border-bottom: 2px solid #004aad;
+    padding-bottom: 5px;
 }
 
 h3 {
@@ -98,10 +97,18 @@ h3 {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.project-pic {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
 }
 
 footer {
