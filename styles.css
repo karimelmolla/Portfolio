@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #fff;
@@ -20,7 +19,6 @@ body {
 }
 
 .profile-section {
-    width: 30%;
     padding: 40px;
     background-color: #f8f9fa;
     text-align: center;
@@ -59,9 +57,14 @@ h1 {
     text-align: left;
 }
 
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .profile-link {
     display: block;
-    margin-top: 10px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -75,8 +78,21 @@ h1 {
 }
 
 .main-content {
-    width: 70%;
     padding: 40px;
+}
+
+.section-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.section-nav a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .section {
@@ -155,12 +171,28 @@ footer a {
     text-decoration: underline;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 768px) {
     .container {
-        flex-direction: column;
+        display: flex;
     }
-    
-    .profile-section, .main-content {
-        width: 100%;
+
+    .profile-section {
+        width: 30%;
+    }
+
+    .main-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .section-nav li {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
