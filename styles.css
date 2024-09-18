@@ -208,3 +208,22 @@ footer a {
         margin-bottom: 10px;
     }
 }
+.cert-item {
+    margin-bottom: 20px;
+}
+
+.cert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.cert-header h3 {
+    margin: 0;
+}
+
+.cert-date {
+    font-style: italic;
+    color: #666;
+}
